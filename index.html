@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+
+        <div class="card row">
+            <div class="card-header">Todo List</div>
+            <div class="card-body">
+                <form name="form" id="todo-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="todo" class="form-control" placeholder="Bir todo daxil edin" id="todo">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Ekleyin</button>
+                </form>
+                <hr>
+            </div>
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title" id="tasks-title">Todolar</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="filter" name="filter" placeholder="Bir Todo Arayin">
+                    </div>
+                </div>
+                <hr>
+                <ul class="list-group">
+                    <!--<li class="list-group-item d-flex justify-content-between">Todo 1
+                        <a href="#" class="delete-item"><i class="fa fa-remove"></i></a>
+                    </li>-->
+                </ul>
+                <hr>
+                <a href="#" id="clear-todos" class="btn btn-dark text-light">Tum Tasklari Temizleyin</a>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
